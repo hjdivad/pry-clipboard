@@ -102,7 +102,7 @@ module PryClipboard
       end
 
       def process
-        res = "#{_pry_.last_result}\n"
+        res = "#{_pry_.last_result}"
         Clipboard.copy res
 
         unless opts.present?(:q)
